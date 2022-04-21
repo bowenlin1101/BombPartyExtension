@@ -1,0 +1,21 @@
+{
+    "name": "Bomb Party Cheat",
+    "description": "Thinks of words for bomb party",
+    "version": "1.0",
+    "manifest_version": 3,
+    "background": {
+      "service_worker":"background.js"
+    },
+    "icons": {
+      "128": "128x128icon.png"},
+    "content_scripts": 
+    [{"matches": ["https://*.jklm.fun/*"],
+      "all_frames": true,
+      "js": ["contentScript.js"]}],
+    "permissions": ["storage", "activeTab", "scripting","alarms"],
+    "action": {
+      "default_popup":"popup/popup.html"
+    }
+  }     
+
+  
